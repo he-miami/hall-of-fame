@@ -21,17 +21,31 @@ def fromAga():
     print("Thank you for being a great teammate!")
     print("All the best on your new adventure!")
 
+def fromAndrzej():
+    print("Tomek, thanks for cooperation!!, in particular ...", end='')
+    input()
+    print("... for fighting together with legacy code (de-authorization, Keycloak config, Python scripts, workarounds etc.)", end='')
+    input()
+    print("... for designing new stuff (client self service, thread modeling, security vulnerabilities, helm charts etc.)", end='')
+    input()
+    print("... and dready culmination related to Kerberos :D")
+    input()
+    print("and what more important for a few very good meetings in real :)")
+    print("All the best to You!!!")
+
 gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
 olaFunc = Func("from-ola", "Aleksandra Dura", fromOla)
 wotoFunc = Func("check-weather", "Wojciech Tomaszek", checkWeather)
 agaFunc = Func("from-aga", "Agnieszka Kominek", fromAga)
+andFunc = Func("from-andrzej", "Andrzej Martyna", fromAndrzej)
 
 functions = [
     Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia")),
     gabiFunc,
     wotoFunc,
     agaFunc,
-    olaFunc
+    olaFunc,
+    andFunc
 ]
 
 while True:
@@ -52,3 +66,4 @@ while True:
     print()
     functions[selection].delegate()
     print()
+    input()
