@@ -10,19 +10,34 @@ def example():
     print("Keep it up!")
 
 
+def fromGabi():
+    print("It was a pleasure working with You!")
+    print("Fly high and good luck!")
+
+
 func = Func("example-func", "...", example)
+gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
 
 functions = [
-    func,
-    Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia"))
+    Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia")),
+    gabiFunc
 ]
 
 while True:
     print("Good morning ...")
     print("List of available functions:")
-    print(type(functions))
     for index, function in enumerate(functions):
         print(f'{index + 1}. Function: >{function.name}<, by: {function.author}')
 
-    selection = input("What function would you like to run:")
-    functions[int(selection) - 1].delegate()
+    selection = None
+    while selection is None:
+        tmp = input("What function would you like to run:")
+        if not tmp.isnumeric():
+            continue
+        tmp = int(tmp) - 1
+        if tmp < 0 or tmp >= len(functions):
+            continue
+        selection = tmp
+    print()
+    functions[selection].delegate()
+    print()
