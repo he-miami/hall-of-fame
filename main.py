@@ -14,13 +14,18 @@ def fromGabi():
     print("It was a pleasure working with You!")
     print("Fly high and good luck!")
 
+def fromOla():
+    print("Goodbye and good luck! It was great to work with you!")
+
 
 func = Func("example-func", "...", example)
 gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
+olaFunc = Func("from-ola", "Aleksandra Dura", fromOla)
 
 functions = [
     Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia")),
-    gabiFunc
+    gabiFunc,
+    olaFunc
 ]
 
 while True:
