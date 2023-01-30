@@ -13,7 +13,8 @@ def example():
 func = Func("example-func", "...", example)
 
 functions = [
-    func
+    func,
+    Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia"))
 ]
 
 while True:
