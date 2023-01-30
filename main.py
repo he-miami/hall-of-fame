@@ -19,6 +19,7 @@ func = Func("example-func", "...", example)
 gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
 
 functions = [
+    Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia")),
     gabiFunc
 ]
 
