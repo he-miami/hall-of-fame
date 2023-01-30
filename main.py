@@ -10,16 +10,21 @@ def example():
     print("Keep it up!")
 
 
+def fromGabi():
+    print("It was a pleasure working with You!")
+    print("Fly high and good luck!")
+
+
 func = Func("example-func", "...", example)
+gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
 
 functions = [
-    func
+    gabiFunc
 ]
 
 while True:
     print("Good morning ...")
     print("List of available functions:")
-    print(type(functions))
     for index, function in enumerate(functions):
         print(f'{index + 1}. Function: >{function.name}<, by: {function.author}')
 
