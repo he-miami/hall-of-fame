@@ -12,7 +12,6 @@ def fromGabi():
 def fromOla():
     print("Goodbye and good luck! It was great to work with you!")
 
-
 def checkWeather():
     print("There is always good weather for great people! So, YOU do not need to worry :)")
     print("All the best to you!")
@@ -44,6 +43,11 @@ def fromAdam():
     print("All the fun out there!")
     print("Thank you and good luck :D")
 
+def fromMarcin():
+    print("Enjoy your coffe!")
+    print("Enjoy programming!")
+    print("I Wish you the best ;)")
+
 gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
 olaFunc = Func("from-ola", "Aleksandra Dura", fromOla)
 wotoFunc = Func("check-weather", "Wojciech Tomaszek", checkWeather)
@@ -51,6 +55,7 @@ agaFunc = Func("from-aga", "Agnieszka Kominek", fromAga)
 andFunc = Func("from-andrzej", "Andrzej Martyna", fromAndrzej)
 micFunc = Func("from-michal", "Michał Olszak", fromMichal)
 adaFunc = Func("from-adam", "Adam Wierzbicki", fromAdam)
+marcinFunc = Func("from-marcin", "Marcin Cieszkowski", fromMarcin)
 
 functions = [
     Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia")),
@@ -60,7 +65,8 @@ functions = [
     olaFunc,
     andFunc,
     micFunc,
-    adaFunc
+    adaFunc,
+    marcinFunc
 ]
 
 while True:
