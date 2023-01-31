@@ -33,6 +33,10 @@ def fromAndrzej():
     print("and what more important for a few very good meetings in real :)")
     print("All the best to You!!!")
 
+def fromMichal():
+    print("May the same positive force be always with you!")
+    print("You will be missed!")
+
 def fromAdam():
     print("All the best code!")
     print("All the best designs!")
@@ -45,6 +49,7 @@ olaFunc = Func("from-ola", "Aleksandra Dura", fromOla)
 wotoFunc = Func("check-weather", "Wojciech Tomaszek", checkWeather)
 agaFunc = Func("from-aga", "Agnieszka Kominek", fromAga)
 andFunc = Func("from-andrzej", "Andrzej Martyna", fromAndrzej)
+micFunc = Func("from-michal", "Michał Olszak", fromMichal)
 adaFunc = Func("from-adam", "Adam Wierzbicki", fromAdam)
 
 functions = [
@@ -54,6 +59,7 @@ functions = [
     agaFunc,
     olaFunc,
     andFunc,
+    micFunc,
     adaFunc
 ]
 
