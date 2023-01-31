@@ -32,12 +32,18 @@ def fromAndrzej():
     input()
     print("and what more important for a few very good meetings in real :)")
     print("All the best to You!!!")
+    
+def fromSebb():
+    print("Kuba, thank you very much for all you have done for us!")
+    print("It was a real pleasure working with you.")
+    print("Good luck and hopefully see you next time.")
 
 gabiFunc = Func("from-gabi", "Gabriela Chacuś", fromGabi)
 olaFunc = Func("from-ola", "Aleksandra Dura", fromOla)
 wotoFunc = Func("check-weather", "Wojciech Tomaszek", checkWeather)
 agaFunc = Func("from-aga", "Agnieszka Kominek", fromAga)
 andFunc = Func("from-andrzej", "Andrzej Martyna", fromAndrzej)
+fromSebb = Func("from-Sebb", "Sebastian Malinowski", fromSebb)
 
 functions = [
     Func("hej", "jakub", lambda: print("wszystkiego dobrego i do zobaczenia")),
@@ -45,7 +51,8 @@ functions = [
     wotoFunc,
     agaFunc,
     olaFunc,
-    andFunc
+    andFunc,
+    fromSebb
 ]
 
 while True:
